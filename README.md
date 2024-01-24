@@ -22,15 +22,16 @@ Also, various protection mechanisms from Grayjay - like url whitelisting - are n
 Use at your own risk!
 
 ### Running
-Checkout the repository and place source.js under `src/renderer/src/grayjay/pluginworker/source.js`
-
-(In the repository root) install the required dependencies (assuming node/npm are installed):
+- Make sure nodejs is installed. (Only tested on Linux with 20.11 LTS.)
+- Checkout the repository and place source.js under `src/renderer/src/grayjay/pluginworker/source.js`
+- (In the repository root) install the required dependencies (assuming node/npm are installed):
 `npm ci`
-
-To run in development mode use:
+- Build dependencies (polycentric-core):
+`npm run prepare`
+- To run in development mode use:
 `npm run dev`
 
-It should be possible to build release packages using these commands (untested):
+It might also be possible to build release packages using these commands (untested):
 Windows:
 `npm run build:win`
 
