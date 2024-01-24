@@ -12,8 +12,6 @@ export function doServiceWorkerRequest(module, method, data) {
     })
   )
 
-  console.log(request.responseText)
-
   const result = JSON.parse(request.responseText)
 
   if (Object.hasOwn(result, 'exception')) {
