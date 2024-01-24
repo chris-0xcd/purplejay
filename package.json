@@ -7,6 +7,7 @@
   "homepage": "https://www.electronjs.org",
   "main": "out/main/index.cjs",
   "scripts": {
+    "prepare": "cd lib/polycentric-core && npm ci && npm run build",
     "format": "prettier --write .",
     "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
     "start": "electron-vite preview",
